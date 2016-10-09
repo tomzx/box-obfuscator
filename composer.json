@@ -1,0 +1,52 @@
+{
+	"name": "tomzx/box-obfuscator",
+	"description": "Compactor for box that obfuscate PHP code",
+	"type": "library",
+	"keywords": [
+		"obfuscator",
+		"box",
+		"compactor"
+	],
+	"homepage": "https://github.com/tomzx/box-obfuscator",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Tom Rochette",
+			"email": "tom@tomrochette.com",
+			"homepage": "http://www.tomrochette.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/tomzx/box-obfuscator/issues"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/TomzxForks/php-obfuscator.git"
+		}
+	],
+	"require": {
+		"php": ">=5.6.0",
+
+		"herrera-io/box": "^1.6",
+		"naneau/php-obfuscator": "dev-master"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^5"
+	},
+	"autoload": {
+		"psr-4": {
+			"tomzx\\BoxObfuscator\\": "src/tomzx/BoxObfuscator"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"tomzx\\BoxObfuscator\\Test\\": "tests/tomzx/BoxObfuscator"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.1-dev"
+		}
+	}
+}
