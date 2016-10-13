@@ -8,7 +8,7 @@
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/tomzx/box-obfuscator.svg)](https://scrutinizer-ci.com/g/tomzx/box-obfuscator)
 [![Total Downloads](https://img.shields.io/packagist/dt/tomzx/box-obfuscator.svg)](https://packagist.org/packages/tomzx/box-obfuscator)
 
-Compactor for box that obfuscate PHP code.
+Compactor for [box](https://github.com/box-project/box2) that obfuscates PHP code.
 
 ## License
 
