@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "60c7cc906a5d65015e4a4bf2c63641a7",
+    "hash": "d87195df4ef2450cdab621bae7211d40",
     "content-hash": "d3b5132bda89fa448055e23be64e1497",
     "packages": [
         {
@@ -289,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TomzxForks/php-obfuscator.git",
-                "reference": "d5d036580a362217b165cd62db22e5d569912a76"
+                "reference": "dc7cf3a7428d1ab23fa29c312dc3e16ae82cafe3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TomzxForks/php-obfuscator/zipball/d5d036580a362217b165cd62db22e5d569912a76",
-                "reference": "d5d036580a362217b165cd62db22e5d569912a76",
+                "url": "https://api.github.com/repos/TomzxForks/php-obfuscator/zipball/dc7cf3a7428d1ab23fa29c312dc3e16ae82cafe3",
+                "reference": "dc7cf3a7428d1ab23fa29c312dc3e16ae82cafe3",
                 "shasum": ""
             },
             "require": {
@@ -328,7 +328,7 @@
             "support": {
                 "source": "https://github.com/TomzxForks/php-obfuscator/tree/master"
             },
-            "time": "2016-10-09 15:30:47"
+            "time": "2016-10-09 18:48:14"
         },
         {
             "name": "nikic/php-parser",

@@ -1,6 +1,6 @@
 {
 	"name": "tomzx/box-obfuscator",
-	"description": "Compactor for box that obfuscate PHP code",
+	"description": "Compactor for box that obfuscates PHP code",
 	"type": "library",
 	"keywords": [
 		"obfuscator",
