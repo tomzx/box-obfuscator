@@ -3,7 +3,6 @@
 namespace tomzx\BoxObfuscator;
 
 use Herrera\Box\Compactor\Compactor;
-use Naneau\Obfuscator\Obfuscator;
 
 class PHP extends Compactor
 {
@@ -11,6 +10,16 @@ class PHP extends Compactor
      * @var array
      */
     protected $extensions = ['php'];
+
+    /**
+     * @var bool
+     */
+    protected $keepComments = false;
+
+    /**
+     * @var bool
+     */
+    protected $keepFormatting = false;
 
     /**
      * Compacts the file contents.
@@ -21,7 +30,17 @@ class PHP extends Compactor
      */
     public function compact($contents)
     {
-        $obfuscator = new Obfuscator();
-        return $obfuscator->obfuscateContent($contents);
+        $container = new \Naneau\Obfuscator\Container();
+        /** @var \Naneau\Obfuscator\Obfuscator $obfuscator */
+        $obfuscator = $container->getContainer()->get('obfuscator');
+        try {
+            return $obfuscator->obfuscateContent($contents, [
+                'keep_comments' => $this->keepComments,
+                'keep_formatting' => $this->keepComments
+            ]);
+        } catch (\PhpParser\Error $e) {
+            // Error during parsing, just return the initial content
+            return $contents;
+        }
     }
 }
